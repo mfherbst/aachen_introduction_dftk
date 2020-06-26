@@ -1,0 +1,72 @@
+Introduction
+	Subject of the lecture: DFTK and plane-wave DFT
+	What is DFTK? (brief)
+		- Julia
+		- Plane-wave DFT code
+		- Lattices, slabs and periodic problems
+		- Interdisciplinary
+		- Maths / chemistry / materials science
+
+	DFT (Density-matrix formalism as extension to orbital formalism)
+	Periodic systems (lattices, Bloch transform, Bloch waves, BZ, k-point sampling, bands)
+		Plot BZ and Lattice in ASE
+		Show a band structure
+	Plane-wave basis sets
+		Ecut
+	Show a first DFTK live example (silicon or sth)
+
+Why DFTK? Why Julia?
+	Plenty of codes exist with astronomous number of methods and hundreds of manyears of coding effort
+	Why bother writing a new code?
+
+	Flagship problem 1: High-throughput screening
+		- Umbrella, long-range aim
+		- Becomes more and more important in applications
+
+	Flagship problem 2: Design of reliable SCF algorithms
+		- Explain what mixing is and that it's dependent on material properties (maybe briefly rationalise relation to εr)
+		- 1D and 2D as testbeds
+		- Quickly mix and match ideas
+		- Might need to change the order of typical steps (potential versus density mixing, line search, backtracking)
+		=> Flexible, dimension-idenpendent code base
+		=> To test approaches, algorithms need to be tried on the full problem!
+
+	Flagship problem 3: A posteriori error anlysis in DFT
+		- State of the art in certain fields (avaition, civil engineering)
+		- State of the art in experimental science
+		- Quantum chemistry: Not so much
+		- People determine trustworthyness of results from experience
+		- Multiple levels of errors, each associated to parameters of calculation
+			- Model error, discretisation error (cutoff and BZ), algorithm error, arithmetic error
+		- Parameters chosen from experience
+		- Ideally would like to tune them in line with each other
+		- Need rigourous error estimates
+		=> Mathematical research is not yet able to deal with full KS-DFT
+		=> Need to reduce to mathematically accessible toy problems and slowly expand
+
+	Overall: DFT is a interdisciplinary challenge
+		- Different demands by differnt communities
+
+	State of the art in existing DFT codes (but DFTK)
+		- specialised on DFT, toy models not available easily
+		- Two language problem: Makes them rigid on low-level algorithms like SCF
+		- Too rigid to try new approaches
+		- Not all open-source, some have very restrictive (and expensive) licences
+		- Huge codes: Impossible to get an overview for non-experts (new PhD students, other fields like maths)
+
+	The DFTK approach:
+		- Julia
+		- Summarise key DFTK features
+		- Highlight recent publications (and how little time it took to prepare them)
+		- Only 1 year of development time
+		- Performance within factor 2 to 3 of established codes
+		- Took time, but we are compatible in performance, fully understand the code, have the flexibility we need to tackle such problems (more in examples)
+		- Papers tell you about methods, but implementing things is when you understand it
+		- We believe in clear code being the documentation
+		- We mainly document by examples and code comments
+		- Code should be close to the paper (not the case in usual practice)
+		- Show some examples for this
+
+DFTK showcases and examples
+	Pick examples from the website and maybe show some DFTK code
+	Emphasise teaching and research code!
