@@ -23,6 +23,7 @@ For working with the material on your own computer you will need:
 
 1. A Julia installation, see [Julia downloads](https://julialang.org/downloads/)
    and [Installation instructions](https://julialang.org/downloads/platform.html).
+   At least **Julia 1.6** is required.
 1. An [IJulia setup](https://github.com/JuliaLang/IJulia.jl),
    which includes both setting up Jupyter notebook and the Julia kernel for the latter.
 1. The Julia packages `DFTK`, `Plots` and `PyCall`, e.g. install them from your Julia REPL
