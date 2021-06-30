@@ -31,8 +31,10 @@ For working with the material on your own computer you will need:
    import Pkg; Pkg.add(["DFTK", "Plots", "PyCall"])
    ```
    
-Some more detailed instructions in getting started can also be found in the
-[Exercises](https://nbviewer.jupyter.org/github/mfherbst/aachen_introduction_dftk/blob/master/4_Exercises.ipynb).
+More detailed instructions how to set this up can be found in the
+[Exercises Jupyer notebook](https://nbviewer.jupyter.org/github/mfherbst/aachen_introduction_dftk/blob/master/4_Exercises.ipynb),
+which you can [view conveniently from your browser](https://nbviewer.jupyter.org/github/mfherbst/aachen_introduction_dftk/blob/master/4_Exercises.ipynb)
+using nbviewer.
 
 [binder-url]: https://mybinder.org/v2/gh/mfherbst/aachen_introduction_dftk/master
 [binder-img]: https://mybinder.org/badge_logo.svg
