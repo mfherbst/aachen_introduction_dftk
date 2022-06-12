@@ -21,11 +21,11 @@ if success
 
     if ispynull(pyimport_e("ase"))
         if !PyCall.conda
-            println("Not installing ASE albeit missing. Please install ASE manually.")
-            println("To do so, most likely you want to run the following command:")
+            println("The python dependency ASE is missing and needs to be installed.")
+            println("To do so, most likely you need to run the following command:")
             python = PyCall.python
             println("     $(python) -m pip install ase")
-            @info "Do you want me to run this command for you?"
+            @info "Do you want me to run this command right now?"
             selected_yes = request("", RadioMenu(["yes", "no"], pagesize=2)) == 1
             if selected_yes
                 run(`$(python) -m pip install ase`)
