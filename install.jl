@@ -13,10 +13,11 @@ success = WorkshopWizard.install(;repo="https://github.com/mfherbst/aachen_intro
                                   auto_overwrite=false)
 
 if success
+    Pkg.activate(path)
     using PyCall
     using Conda
     using REPL.TerminalMenus
-    
+
     if ispynull(pyimport_e("ase"))
         if !PyCall.conda
             println("Not installing ASE albeit missing. Please install ASE manually.")
@@ -32,6 +33,8 @@ if success
             println("Installing ASE to Julia built-in Conda environment")
             Conda.add("ase", channel="conda-forge")
         end
+    else
+        println("Found ASE ... not installing.")
     end
 
     @info "That's it. Start the notebook server with 'using IJulia; notebook(dir=\"$path/aachen_introduction_dftk\")' ..."

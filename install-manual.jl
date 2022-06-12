@@ -18,6 +18,8 @@ if ispynull(pyimport_e("ase"))
         println("Installing ASE to Julia built-in Conda environment")
         Conda.add("ase", channel="conda-forge")
     end
+else
+    println("Found ASE ... not installing.")
 end
 
 println("Done!")

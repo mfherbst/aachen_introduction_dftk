@@ -26,8 +26,7 @@ Working with these notes requires:
 ### RWTH Aachen Jupyter lab
 If you are a student at RWTH Aachen and want to use the Julia-Jupyter setup
 RWTH provides, please see the respective section in the
-[1_Installation](1_Installation.ipynb) notebook. For using the material
-locally, follow these instructions.
+[1_Installation](1_Installation.ipynb) notebook.
 
 ### Getting Julia
 For following the course you will need at least **Julia 1.7**.
