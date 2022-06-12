@@ -12,8 +12,9 @@ success = WorkshopWizard.install(;repo="https://github.com/mfherbst/aachen_intro
                                   global_IJulia=true,
                                   auto_overwrite=false)
 
+repo = joinpath(path, "aachen_introduction_dftk")
 if success
-    Pkg.activate(path)
+    Pkg.activate(repo)
     using PyCall
     using Conda
     using REPL.TerminalMenus
@@ -37,5 +38,5 @@ if success
         println("Found ASE ... not installing.")
     end
 
-    @info "That's it. Start the notebook server with 'using IJulia; notebook(dir=\"$path/aachen_introduction_dftk\")' ..."
+    @info "That's it. Start the notebook server with 'using IJulia; notebook(dir=\"$repo\")' ..."
 end
