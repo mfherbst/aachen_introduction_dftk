@@ -1,4 +1,4 @@
-# Introduction to plane-wave DFT and DFTK  [![][binder-img]][binder-url]
+# Introduction to plane-wave DFT and DFTK
 
 These lecture notes provide a brief introduction
 into plane-wave density-functional theory (DFT)
@@ -7,7 +7,7 @@ Some familiarity with electronic structure theory
 is assumed, but no in-depth knowledge is required.
 
 The material has been prepared for the
-[*Mathematical Aspects of Computational Chemistry*](http://www.acom.rwth-aachen.de/3teaching/0classes/archiv/mathchem)
+[*Mathematical Aspects of Computational Chemistry*](http://www.acom.rwth-aachen.de/3teaching/0classes/mathchem)
 lecture in summer semester 2022 at RWTH Aachen
 and works best with **DFTK 0.5** and **Julia 1.7**.
 A great deal of the material has also been discussed
@@ -26,7 +26,7 @@ Working with these notes requires:
 ### RWTH Aachen Jupyter lab
 If you are a student at RWTH Aachen and want to use the Julia-Jupyter setup
 RWTH provides, please see the respective section in the
-[0_Installation](0_Installation.ipynb) notebook. For using the material
+[1_Installation](1_Installation.ipynb) notebook. For using the material
 locally, follow these instructions.
 
 ### Getting Julia
@@ -62,7 +62,7 @@ the [great troubleshooting section](https://carstenbauer.github.io/WorkshopWizar
 from the WorkshopWizard package by Carsten Bauer (which `install.jl` is using).
 
 ### Check everything works
-There is a section in the [0_Installation](0_Installation.ipynb) notebook
+There is a section in the [1_Installation](1_Installation.ipynb) notebook
 with a few quick commands to check everything works as expected.
 
 ## Working with these notes online (Beta)
